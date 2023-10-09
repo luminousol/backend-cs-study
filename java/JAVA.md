@@ -1,4 +1,5 @@
 # JAVA
+<br/>
 
 ### 🐾 10월 10일 
 
@@ -53,6 +54,7 @@
 <details>
     <summary>SOLID(객체지향의 5대 원칙)에 대해 설명 해주세요.</summary>
 </details>
+<br/>
 
 ### 🐾 10월 13일
 
