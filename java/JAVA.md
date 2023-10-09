@@ -1,5 +1,4 @@
 # JAVA
-<br/>
 
 ### 🐾 10월 10일 
 
@@ -55,8 +54,10 @@
     <summary>SOLID(객체지향의 5대 원칙)에 대해 설명 해주세요.</summary>
 </details>
 <br/>
+<br/>
 
 ### 🐾 10월 13일
+
 
 <details>
     <summary>통일성(identity)와 동등성(equality)에 대해 설명해주세요. (equals(), ==)</summary>
