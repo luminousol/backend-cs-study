@@ -3,7 +3,7 @@
 
 <br/>
 
-## ABOUT STUDY
+## ABOUT STUDY ️ ️🖥️🖱️
 ✔️ 스터디 시작 (2023.10.10 ~ )<br/>
 ✔️ 스터디 일정 : 매주 화 & 금 / 오전 11시 ~ <br/>
 ✔️ 장소 : 온라인 / 디스코드 <br/>
@@ -11,17 +11,27 @@
 
 <br/>
 
-## CS 면접 스터디의 목적
-- JAVA, Spring 외 알고리즘, 자료구조, 운영체제, 네트워크, DB 등 CS 지식 이해
-- CS 지식을 공부하고 명확하게 전달하는 능력
-- 면접에 대한 두려움 줄이기
-- 서로 피드백을 주고 받으며 문제점 개선
+## CS 면접 스터디의 목적 🗣️
+- JAVA, Spring 외 알고리즘, 자료구조, 운영체제, 네트워크, DB 등 **CS 지식 이해**
+- CS 지식을 공부하고 **명확하게 전달하는 능력**
+- 면접에 대한 **두려움 줄이기**
+- 서로 피드백을 주고 받으며 **문제점 개선**
 - 문제에 대응할 수 있는 능력 기르기
-- 커뮤니케이션 능력 강화
+- **커뮤니케이션** 능력 강화
 
 <br/>
 
-## 참고 자료
+## 목차 📁
+[1. JAVA](java/JAVA.md) <br/>
+[2. SPRING](spring/SPRING.md) <br/>
+[3. NETWORK](network/NETWORK.md) <br/>
+[4. Operating System](os/OS.md) <br/>
+[5. DB](db/DATABASE.md) <br/>
+[6. ALGORITHM](algorithm/ALGORITHM.md)
+
+<br/>
+
+## 참고 자료 📖
 🔗 https://github.com/ksundong/backend-interview-question <br/>
 🔗 https://careerly.co.kr/comments/83898?utm_campaign=user-shareg
 
