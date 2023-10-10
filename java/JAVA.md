@@ -58,11 +58,6 @@
 
 ### 🐾 10월 13일
 
-
-<details>
-    <summary>통일성(identity)와 동등성(equality)에 대해 설명해주세요. (equals(), ==)</summary>
-</details>
-
 <details>
     <summary>원시타입과 참조타입의 차이에 대해 설명해주세요.</summary>
 </details>
@@ -73,10 +68,6 @@
 
 <details>
     <summary>Checked Exception과 Unchecked Exception에 대해 설명해주세요, 스프링 트랜잭션 추상화에서 rollback 대상은 무엇일까요?</summary>
-</details>
-
-<details>
-    <summary>JAVA 8에서 추가된 주요 기능에 대해 설명해주세요.</summary>
 </details>
 
 <details>
