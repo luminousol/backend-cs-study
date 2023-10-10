@@ -59,6 +59,10 @@
 ### 🐾 10월 13일
 
 <details>
+    <summary>통일성(identity)와 동등성(equality)에 대해 설명해주세요. (equals(), ==)</summary>
+</details>
+
+<details>
     <summary>원시타입과 참조타입의 차이에 대해 설명해주세요.</summary>
 </details>
 
