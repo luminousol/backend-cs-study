@@ -198,6 +198,18 @@ SOLID 원칙은 객체지향의 특징(추상화, 상속화, 다형성, 캡슐�
 
 <details>
     <summary>원시타입과 참조타입의 차이에 대해 설명해주세요.</summary>
+
+
+원시타입은 변수에 **실제 값을 저장**하는 데이터 타입으로 boolean, char, byte, short, int, long, float, double 형이 있습니다. 이 데이터 타입은 **stack 영역에 저장**되며 변수의 선언과 동시에 메모리를 생성한다는 특징이 있습니다.
+
+참조형 타입은 이름처럼 주소를 “참조”하는 타입으로 8가지 원시타입 데이터를 제외한 모든 데이터 타입을 말 합니다. 참조형 데이터 타입은 저장된 공간의 주소를 저장할 수 있습니다. 메모리의 **heap영역에 주소값을 저장**하는 형태입니다.
+
+✅ 원시 타입은 null 값을 가질 수 없다.
+
+✅ 원시타입 boolean 1, char 2, byte 1, short 2, int 4, long 8, float 4, double 8  바이트를 가집니다.
+
+🔗 https://luminousolding.tistory.com/56
+
 </details>
 
 <details>
@@ -210,6 +222,26 @@ SOLID 원칙은 객체지향의 특징(추상화, 상속화, 다형성, 캡슐�
 
 <details>
     <summary>try-with-resource 에 대해 설명해주세요.</summary>
+
+
+"try-with-resource"는 자원 관리를 간편하게 해주는 기술로 Java 7 이후 도입된 기술입니다. 
+(Java 7) 이전에는 파일과 같은 외부 리소스를 이용 후 꼭 닫아줘야 했는데 개발자가 직접 닫아주는 것은 가독성에도 좋지 않고 실수로 닫지 않을 수 있는 경우도 발생할 수 있습니다. 
+이를 막기 위해 "try-with-resource"문을 사용할 수 있습니다.
+
+
+력에 사용한 객체를 자동으로 반환시켜주기 때문에 입출력과 관련된 클래스를 사용할 때 매우 유용합니다. 
+<pre>
+try (리소스 선언 명령문) {
+     ...
+} 
+</pre>
+"try-with-resource"문의 기본 문법 구조는 try 블록 내부에서 리소스를 선언하면 try 블록이 종료될 때 자동으로 닫히는 형태입니다. 이렇게 "try-with-resource"를 사용함으로써 파일 누수, 메모리 누수를 방지할 수 있습니다.
+
+
+🔗 [The try-with-resources Statement](https://docs.oracle.com/javase/tutorial/essential/exceptions/tryResourceClose.html) <br/>
+🔗 [자바 Try With Resource 예외 처리](https://inpa.tistory.com/entry/JAVA-%E2%98%95-%EC%98%88%EC%99%B8-%EC%B2%98%EB%A6%AC-Try-With-Resource-%EB%AC%B8%EB%B2%95) <br/>
+🔗 [[Java] try-with-resources란? try-with-resources 사용법 예시와 try-with-resources를 사용해야 하는 이유](https://mangkyu.tistory.com/217)
+
 </details>
 
 <details>
@@ -222,6 +254,57 @@ SOLID 원칙은 객체지향의 특징(추상화, 상속화, 다형성, 캡슐�
 
 <details>
     <summary>자바의 동시성 이슈(공유자원 접근)에 대해 설명해주세요.</summary>
+
+
+동시성 이슈는 멀티 스레딩 환경에서 여러 스레드가 동일한 자원을 공유하여 사용할 때 발생하는 문제로 좋아요가 count 되는 것을 예시로 들 수 있습니다.
+게시글의 좋아요가 0인 상태에서 n명의 회원이 동시에 좋아요를 누른다면 n개의 좋아요가 더해져야 합니다. 하지만 1개의 좋아요만 추가되는 것과 같은 문제가 발생했을 때 동시성 문제 발생이라고 합니다. 
+
+
+<details>
+<summary>
+동시성 문제를 해결하기 위한 방법
+</summary>
+
+✅ 암시적 Lock
+- synchronized 키워드를 사용하여 특정 메서드나 코드 블록에 대한 동시 접근을 제한
+- 한 번에 하나의 스레드만 접근이 가능하므로 병렬성은 매우 떨어짐
+<pre>
+class Main {
+    private int i;
+    public synchronized int view() {return i++;}
+}
+</pre>
+
+
+✅ 명시적 Lock
+- 복잡한 시나리오에 유용하며 ReentrantLock 같은 명시적 락 사용
+- 시간 제한 두고 락 획득 시도, 여러 조건 변수 사용 등
+
+
+✅ 가시성 문제
+- volatile 키워드를 사용하여 CPU 캐시가 아닌 메인 메모리에서 읽고 씀
+- 'vilatile' 은 원자성을 보장하지 않음
+- 복합 연산에서는 적합하지 않음
+- 하나의 스레드가 wtite를 하고 다른 하나의 스레드가 read만 할 경우 유용
+
+
+✅ thread-safe 객체 사용
+- Concurrent 패키지 자료구조는 멀티스레드 환경에서 안전하다
+
+
+✅ 불변 객체 사용
+- 생성 후 그 상태가 절대 변하지 않는 객체
+- 데이터 불일치 문제가 발생하지 않음
+- 모든 필드를 'final'로 선언, setter X
+
+
+🔗 [[Java] Thread/MultiThread 4 - 동시성 문제](https://llshl.tistory.com/12) <br/>
+🔗 [[Java] Java의 동시성 이슈](https://steady-coding.tistory.com/554)
+
+</details>
+
+
+
 </details>
 
 <details>
@@ -230,6 +313,14 @@ SOLID 원칙은 객체지향의 특징(추상화, 상속화, 다형성, 캡슐�
 
 <details>
     <summary>자바에서 null을 안전하게 다루는 방법에 대해 설명해주세요.</summary>
+
+‘**NullPointerException**’은 자주 마주치는 예외이기 때문에 null을 다루는 것은 매우 중요한 이슈입니다.
+
+1. if 문을 써서 null을 체크 합니다.
+2. Optional 클래스를 사용하여 null일 경우 연산을 수행합니다.
+3. @Nullable, @NotNull 등과 같은 어노테이션을 사용하여 유효성 검사를 진행합니다.
+4. 이외에도 설계 시 null 값을 반환하지 않는 것과 같은 설계 원칙을 따를 수 있습니다.
+
 </details>
 
 <details>
