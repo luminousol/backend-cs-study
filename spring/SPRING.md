@@ -116,11 +116,11 @@ JPA를 쓴다면 그 이유에 대해서 설명해주세요.
 </summary>
 </details>
 
-<summary>
 <details>
-N + 1 문제는 무엇이고 이것이 발생하는 이유와 이를 해결하는 방법을 설명해주세요.
+  <summary>
+    N + 1 문제는 무엇이고 이것이 발생하는 이유와 이를 해결하는 방법을 설명해주세요.
+  </summary>
 </details>
-</summary>
 
 
 ## SECURITY
