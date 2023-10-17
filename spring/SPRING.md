@@ -34,17 +34,24 @@ IoC 컨테이너의 역할은 무엇이 있을까요?
 <summary>
 DI 종류는 어떤것이 있고, 이들의 차이는 무엇인가요?
 </summary>
+  
 </details>
 
 <details>
 <summary>
-Spring Web MVC의 Dispatcher Servlet의 동작 원리에 대해서 간단히 설명해주세요.
-</summary>
+Autowiring 과정에 대해서 설명해주세요.
+</summary>  
 </details>
 
 <details>
 <summary>
 프론트 컨트롤러 패턴이란 무엇인가요?
+</summary>
+</details>
+
+<details>
+<summary>
+Spring Web MVC의 Dispatcher Servlet의 동작 원리에 대해서 간단히 설명해주세요.
 </summary>
 </details>
 
