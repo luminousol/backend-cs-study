@@ -207,6 +207,9 @@ SOLID 원칙은 객체지향의 특징(추상화, 상속화, 다형성, 캡슐�
 
 <details>
     <summary>통일성(identity)와 동등성(equality)에 대해 설명해주세요. (equals(), ==)</summary>
+동등성은 두 객체가 완전히 같음을 의미한다, 기본 타입일 경우 값이 같음을, 객체일 경우는 주소값이 같음을 의미 한다.
+
+동일성은 두 객체가 같은 정보를 같고 있음을 말한다 객체의 주소값이 다르더라도 참조하는 값이 같으면 두 객체는 동하다고 할 수있다
 </details>
 
 <details>
@@ -227,10 +230,53 @@ SOLID 원칙은 객체지향의 특징(추상화, 상속화, 다형성, 캡슐�
 
 <details>
     <summary>String, String Builder, String Buffer 각각의 차이에 대해 설명해주세요.</summary>
+	String은 불변성, StringBuilder와 Buffer는 가변성이라는 차이점이 있다.
+
+String은 문자열을 수할 때 객체가 변하는 것이 아니라 새로운 문자열 객체를 생성하여 많이 결합할 수록 공간의 낭비가 생기고 속도가 느려진다.
+
+![img1 daumcdn (1)](https://github.com/codestates-seb/seb45_main_006/assets/129938243/98261796-4fa0-41af-95df-c503b4f83ebb)
+
+하지만 StringBuilder 와 Buffer는 버퍼라는 독립적인 공간을 가지고 있어 문자열을 수정할 수 있다
+
+![img1 daumcdn (2)](https://github.com/codestates-seb/seb45_main_006/assets/129938243/1a8061d0-1482-498b-9f9a-fbd8e0793460)
+
+
+동등성 비교에서는 == 는 다른 객체와 똑같지만 버퍼와 빌더는 equals 로 비교하려면 String 객체로 바꾼 후 비교를 해야한다. 바꾸지 않으면 == 비교와 같은 결과가 나온다
+
+버퍼는 동기화를 지원하지만 빌더는 동기화를 지원하지 않는다.
+
+→ 버퍼는 synchronized 키워드가 붙어 있어서 멀티 스레드에서도 안전하게 동작이 가능하다
+
+→ 버퍼와 빌더를 append 로 1만번 문자열을 붙이면 버퍼는 동기화가 잘 되어 1만번 제대로 붙지만 빌더는 동기화가 잘 되지 않아 append 가 제대로 수행되지 않는 경우가 있다.
+
+결론 : 문자열을 자주 변경하지 않을 경우 String, 문자열을 자주 수정하고 멀티 스레드일경우 StringBuffer, 문자열을 자주 수정하고 동기화를 고려하지 않으며 속도가 더 빠른 것을 원할때 StringBuilder 를 사용하는 것이 좋다
 </details>
 
 <details>
     <summary>Checked Exception과 Unchecked Exception에 대해 설명해주세요, 스프링 트랜잭션 추상화에서 rollback 대상은 무엇일까요?</summary>
+에러는 복구할 수 없는 오류
+
+예외는 복구할 수 있는 수준의 오류를 말한다. 
+
+CkeckedExcetpion은 단어 그대로 확인해야할 예외이다.
+
+RuntimeException을 상속 받지 않으며 대표적으로 IOException, SQLException 등이 있고 예외 처리를 하지 않으면 컴파일 에러가 생긴다 
+
+UnCheckedException은 RuntimeException을 상속 받으며 컴파일러가 예외처리를 강제하지 않는다.
+
+대표적으로 NPE, illegalArgumentException 등이 있다. 
+
+예외처리를 강제하지 않기 때문에 예외를 누락할 수 도 있다.
+
+그리고
+
+스프링 프레임워크에서 제공하는 @Transcational 애너테이션안에서 에러가 발생 시 체크 예외는 롤백이되지 않지만 언체크 예외는 롤백이 된다는 차이점이 있다.
+
+예외를 처리하는 것이 좋을 것 같은데 언체크 예외가 필요한 이유?
+
+모든 예외를 처리하기는 번거롭고, 불필요한 의존관계가 생기때문
+
+→ 예로 SQLException은 Repository에서 데이터에 접근할 때 생길 수 있는 에러이며 SQL 문법으로 인한 오류이다. 이 오류를 처리할만한 곳이 마땅히 없이 상위로 계속 예외를 던지다 보니 Controller 까지 예외가 전달되게 된다. 이렇게 되면 Controller가 Repository를 의존하게 된다.
 </details>
 
 <details>
@@ -322,6 +368,8 @@ class Main {
 
 <details>
     <summary>Mutable(가변 객체)와 Imutable(불변 객체)의 차이점에 대해 설명해주세요.</summary>
+Mutable은 가변 객체 Immutable은 불변 객체이며 가변 객체는 말 그대로 객체가 변할 수 있음을 말하고
+예시로는 StringBuilder StringBuffer 가 있다 불변 객체는 객체가 변하지 않음을 말하고 예시는 String 이 있다.
 </details>
 
 <details>
