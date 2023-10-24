@@ -10,9 +10,8 @@ Spring DI/IoC는 어떻게 동작하나요?
 <summary>
 Spring Bean이란 무엇인가요?
 </summary>
-
+<hr/>
 <br/>
-
 스프링에서는 제어권을 역전하여 객체의 생성을 스프링 프레임 워크에서 담당하게 됩니다. 사용자는 new 생성자를 이용하지 않고 스프링에 의해 관리 당하는 자바 객체를 사용하게 됩니다. 
 
 이 객체를 **스프링 빈(bean)** 이라고 부릅니다. 빈 객체는 스프링 IoC 컨테이너에 의해 초기화, 생성, 소멸 등의 관리를 받고 의존성 주입을 통해 다른 빈이나 스프링 컴포넌트들과 상호작용할 수 있습니다. 이를 통해 느슨한 결합을 가능하게 합니다.
@@ -24,10 +23,9 @@ Spring Bean이란 무엇인가요?
 <summary>
 스프링 Bean의 생성 과정을 설명해주세요.
 </summary>
-
+<hr/>
 <br/>
-
-스프링 컨테이너는 **“빈 객체 생성 → 의존 관계 주입 → 초기화 → 소멸”** 단계의 생명 주기를 가지고 있습니다. 
+스프링 컨테이너는 빈 객체 생성 → 의존 관계 주입 → 초기화 → 소멸 단계의 생명 주기를 가지고 있습니다. 
 
 Bean은 스프링 컨테이너에 의해 생명주기를 관리하며 **빈 초기화방법은 @PostConstruct** 를 **빈 소멸**에서는 **@PreDestroy** (종료 콜백) 를 사용합니다.
 
@@ -40,7 +38,7 @@ Bean은 스프링 컨테이너에 의해 생명주기를 관리하며 **빈 초�
 <summary>
 스프링 Bean의 Scope에 대해서 설명해주세요.
 </summary>
-
+<hr/>
 <br/>
 
 빈스코프란 빈이 존재할 수 있는 범위를 의미합니다. 
@@ -86,7 +84,7 @@ Autowiring 과정에 대해서 설명해주세요.
 <summary>
 프론트 컨트롤러 패턴이란 무엇인가요?
 </summary>
-
+<hr/>
 <br/>
 
 ![image](https://github.com/luminousol/backend-cs-study/assets/130022922/a284382e-64da-46b2-95f2-1025655004dc)
@@ -267,7 +265,7 @@ Bean/Component 어노테이션에 대해서 설명해주시고, 둘의 차이점
 <summary>
 POJO란 무엇인가요? Spring Framework에서 POJO는 무엇이 될 수 있을까요?
 </summary>
-
+<hr/>
 <br/>
 
 POJO(Plain Old Java Object)란 객체 지향적 원리에 충실하면서 
@@ -285,7 +283,7 @@ SPRING에서는 **도메인과 비즈니스 로직을 수행하는 객체**, DTO
 <summary>
 Spring Web MVC에서 요청 마다 Thread가 생성되어 Controller를 통해 요청을 수행할텐데, 어떻게 1개의 Controller만 생성될 수 있을까요?
 </summary>
-
+<hr/>
 <br/>
 
 스프링 Web MVC 에서 컨트롤러가 하나만 생성되는 이유는 **Bean과 Scope(범위)** 때문입니다.
@@ -351,7 +349,7 @@ public class GlobalExceptionAdvice {
 <summary>
 Spring Application을 구동할 때 메서드를 실행시키는 방법에 대해 설명해주세요.
 </summary>
-
+<hr/>
 <br/>
 
 Spring Application을 구동할 때 특정 메서드를 실행하고자 할 때 다양한 방법이 있습니다.
@@ -368,7 +366,6 @@ Spring Application이 시작된 후에 특정 코드를 실행하고 싶을 때 
 - 컴포넌트로 선언하고 필요한 의존성을 주입하여 사용할 수 있습니다..
 
 <pre>
-
 @Component
 public class MyRunner implements CommandLineRunner {
 
@@ -377,7 +374,6 @@ public class MyRunner implements CommandLineRunner {
         // 실행하고 싶은 코드
     }
 }
-
 </pre>
 </details>
 
@@ -434,7 +430,6 @@ public class LicenseNotificationService {
         }
     }
 }
-
 </pre>
 </details>
 
@@ -479,9 +474,9 @@ public class MyBean implements InitializingBean {
 @Bean 애노테이션을 사용하여 빈을 생성할 때 initMethod 속성을 사용하면, 
 해당 빈 객체 생성 시점에 호출할 초기화 메서드를 지정할 수 있습니다.
 </summary>
+<pre>
 @Configuration
 public class MyConfiguration {
-
     @Bean(initMethod = "init")
     public MyBean myBean() {
         return new MyBean();
@@ -489,11 +484,11 @@ public class MyConfiguration {
 }
 
 public class MyBean {
-
     public void init() {
         // 빈 초기화 시 실행할 코드
     }
 }
+</pre>
 </details>
 </details>
 
@@ -550,7 +545,5 @@ JPA를 쓴다면 그 이유에 대해서 설명해주세요.
   </summary>
 </details>
 
-
-## SECURITY
 
 
