@@ -11,6 +11,7 @@ Spring DI/IoC는 어떻게 동작하나요?
 Spring Bean이란 무엇인가요?
 </summary>
 
+<br/>
 
 스프링에서는 제어권을 역전하여 객체의 생성을 스프링 프레임 워크에서 담당하게 됩니다. 사용자는 new 생성자를 이용하지 않고 스프링에 의해 관리 당하는 자바 객체를 사용하게 됩니다. 
 
@@ -24,6 +25,7 @@ Spring Bean이란 무엇인가요?
 스프링 Bean의 생성 과정을 설명해주세요.
 </summary>
 
+<br/>
 
 스프링 컨테이너는 **“빈 객체 생성 → 의존 관계 주입 → 초기화 → 소멸”** 단계의 생명 주기를 가지고 있습니다. 
 
@@ -39,6 +41,7 @@ Bean은 스프링 컨테이너에 의해 생명주기를 관리하며 **빈 초�
 스프링 Bean의 Scope에 대해서 설명해주세요.
 </summary>
 
+<br/>
 
 빈스코프란 빈이 존재할 수 있는 범위를 의미합니다. 
 
@@ -84,6 +87,8 @@ Autowiring 과정에 대해서 설명해주세요.
 프론트 컨트롤러 패턴이란 무엇인가요?
 </summary>
 
+<br/>
+
 ![image](https://github.com/luminousol/backend-cs-study/assets/130022922/a284382e-64da-46b2-95f2-1025655004dc)
 
 
@@ -112,7 +117,9 @@ Spring Web MVC의 Dispatcher Servlet의 동작 원리에 대해서 간단히 설
 <summary>
  Servlet Filter와 Spring Interceptor의 차이는 무엇인가요?
  </summary>
-    
+
+<br/>
+
 ![img1 daumcdn (5)](https://github.com/codestates-seb/seb45_main_006/assets/129938243/7955d55e-ae41-414b-8f6b-fb428547f27a)
 서블릿 필터란 요청이 들어왓을 때 Dispacher Servlet 에 전달되기 전 또는 후에 URL 패턴에 부가적인 작업을 처리할 수 있는 기능이다.
 
@@ -120,7 +127,8 @@ Spring Web MVC의 Dispatcher Servlet의 동작 원리에 대해서 간단히 설
 
 **요청 → WAS → 필터 1~N → 서블릿 → 컨트롤러** 순으로 처리되고 Filter 인터페이스를 사용하여 구현한다
 
-```java
+<pre>
+java
 public interface Filter {
 
     public default void init(FilterConfig filterConfig) throws ServletException {}
@@ -133,7 +141,7 @@ public interface Filter {
     public default void destroy() {}
 
 }
-```
+</pre>
 
 필터는 공통 로깅, 인증, 인가 등 에 사용한다
 
@@ -146,7 +154,8 @@ public interface Filter {
 
 순으로 호출되고 HandlerInterceptor로 구현한다.
 
-```java
+<pre>
+java
 public interface HandlerInterceptor 
 
 //  boolean으로 반환되면 계속 진행 false면 멈춤(컨트롤러 호출 전)
@@ -167,7 +176,8 @@ public interface HandlerInterceptor
     }
 -> 하위에서 예외가 생겨도 반드시 호출
 }
-```
+</pre>
+
 둘의 차이점
 ![img1 daumcdn (6)](https://github.com/codestates-seb/seb45_main_006/assets/129938243/1de2c2bb-7192-4f29-9e63-b1b4a433f549)
 
@@ -178,10 +188,13 @@ public interface HandlerInterceptor
 인터셉터는 클라이언트의 요청과 관련된 작업에 대해 추가적인 요구사항을 만족해야 할 때 적용한다.
 </details>
 
-</details>
+
+<details>
 <summary>
 Spring에서 CORS 에러를 해결하기 위한 방법을 설명해주세요.
 </summary>
+
+<br/>
 
 먼저 SOP(Same Origin Policy)란 어떤 출처(Origin)에서 불러온 문서나 스크립트가 다른 출처에서
 
@@ -213,11 +226,11 @@ domainA/pg2라는 페이지에서는 이전 페이지인 domainA/pg라는 페이
 2. domainB의 요청이기 때문에 domainA과 다른 출처 즉 cross origin이라 판단
 3. domainB의 요청을 받아들이지 않음
 
-만약 다른 출처 리소스가 필요하다면? CORS를 사용 
+만약 다른 출처 리소스가 필요하다면? CORS를 사용
 
 CORS는 다른 출처의 자원을 공유함
 
-추가적인 HTTP 헤더를 사용하여 출처에서 실행 중인 웹 어플리케이션의 **다른 출처**의 
+추가적인 HTTP 헤더를 사용하여 출처에서 실행 중인 웹 어플리케이션의 **다른 출처**의
 
 선택한 자원에 **접근할 수 있는 권한**을 부여함
 
@@ -226,7 +239,8 @@ CORS는 다른 출처의 자원을 공유함
 
 CORS를 해결하기 위해서는
 
-```java
+<pre>
+java
  @Bean
     CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
@@ -237,8 +251,10 @@ CORS를 해결하기 위해서는
 
         return source;
     }
-    이 예시는 스프링시큐리티 인데 CorsConfigurationSource 에 CORS 설정을 하고 빈으로 등록하면 해당 URL에 대한 CORS가 가능해진다.
-```
+</pre>
+
+이 예시는 스프링시큐리티 인데 CorsConfigurationSource 에 CORS 설정을 하고 빈으로 등록하면 해당 URL에 대한 CORS가 가능해진다.
+
 </details>
 
 <details>
@@ -251,18 +267,50 @@ Bean/Component 어노테이션에 대해서 설명해주시고, 둘의 차이점
 <summary>
 POJO란 무엇인가요? Spring Framework에서 POJO는 무엇이 될 수 있을까요?
 </summary>
+
+<br/>
+
+POJO(Plain Old Java Object)란 객체 지향적 원리에 충실하면서 
+**환경과 기술에 종속되지 않고 필요에 따라 재활용 가능**한 확장에 제한이 없는 자바 오브젝트를 의미합니다.
+
+SPRING에서는 **도메인과 비즈니스 로직을 수행하는 객체**, DTO, 
+컨테이너에 의해 관리되는 오브젝트들, 레포지토리와 DAO 클래스(서비스 클래스)가 POJO의 대상이 될 수 있습니다.
+
+스프링 프레임워크에서는 POJO의 사용으로 개발자들은 비즈니스 로직에 
+더욱 집중할 수 있으며 테스트 용이성을 높이고 코드의 유지 보수성 또한 높일 수 있습니다.
+
 </details>
 
 <details>
 <summary>
 Spring Web MVC에서 요청 마다 Thread가 생성되어 Controller를 통해 요청을 수행할텐데, 어떻게 1개의 Controller만 생성될 수 있을까요?
 </summary>
+
+<br/>
+
+스프링 Web MVC 에서 컨트롤러가 하나만 생성되는 이유는 **Bean과 Scope(범위)** 때문입니다.
+
+스프링 프레임워크는 IoC 컨테이너를 통해 애플리케이션의 객체 생명주기와 의존성을 관리하는데 
+컨테이너 내에서 객체는 **Bean**으로 정의되며 이 Bean들은 다양한 **Scope**를 가질 수 있습니다.
+
+기본적으로 스프링에서 모든 빈은 **싱글톤 스코프**를 가지는데 컨테이너당 
+Bean 인스턴스 하나만 생성되는 것으로 요청 시 동일한 인스턴스를 반환하는 것을 말합니다. 
+따라서 하나의 Controller가 정의되면 **하나의 인스턴스만 생성하**고 
+이후 모든 요청에 대해 **같은 Controller 인스턴스를 재사용**하게 됩니다.
+
+싱글톤 스코프와 Spring MVC 컨트롤러의 상태를 갖지 않는 특징(멤버 변수가 없거나, 있는 경우에도 읽기 전용 이거나 스레드로부터 안전한 객체를 참조)때문에 
+동시에 여러 요청이 처리 되어도 컨트롤러 상태에 대한 경쟁조건이 발생하지 않음을 보장합니다. 
+→ S**pring MVC 컨트롤러의 thread-safe 한 설계**로 인해 모든 요청이 동일한 인스턴스를 안전하게 통과할 수 있음
+
 </details>
 
 <details>
 <summary>
 Filter는 Servlet의 스펙이고, Interceptor는 Spring MVC의 스펙입니다. Spring Application에서 Filter와 Interceptor를 통해 예외를 처리할 경우 어떻게 해야 할까요?
 </summary>
+
+<br/>
+
 필터는 DispatcherServlet 외부에 존재하기 스프링의 도움을 받지 못해 예외가 발생했을 때 ErrorController에서 처리해야 한다.
 
 만약 필터에서 MemberNotFoundException이 던져졌다면, 에러가 처리되지 않고 Dispatcher Servlet까지 전달된다. 서블릿은 예외가 핸들링 되기를 기대했지만, 
@@ -270,7 +318,8 @@ Filter는 Servlet의 스펙이고, Interceptor는 Spring MVC의 스펙입니다.
 -> 따라서 내부에 문제가 있다고 판단하여 500 Status로 응답을 반환한다.
 -> 이를 해결하려면 필터에서 다음과 같이 응답(Response) 객체에 예외 처리가 필요하다.
 
-```java
+<pre>
+java
 public class MyFilter implements Filter {
 
     @Override
@@ -280,11 +329,12 @@ public class MyFilter implements Filter {
         servletResponse.getWriter().print("Member Not Found");
     }
 }
-```
+</pre>>
     
 인터셉터는 DispatcherServlet 내부에, Spring Context에 존재하기 때문에 @ControllerAdvice, @ExceptionAdvice 등 적용해서 처리할 수 있다.
 예
-```java
+<pre>
+java
 @RestControllerAdvice
 public class GlobalExceptionAdvice {
     @ExceptionHandler
@@ -294,13 +344,157 @@ public class GlobalExceptionAdvice {
         return new ResponseEntity<>(response, HttpStatus.valueOf(e.getExceptionCode().getStatus()));
     }
 }
-```
+</pre>
 </details>
 
 <details>
 <summary>
 Spring Application을 구동할 때 메서드를 실행시키는 방법에 대해 설명해주세요.
 </summary>
+
+<br/>
+
+Spring Application을 구동할 때 특정 메서드를 실행하고자 할 때 다양한 방법이 있습니다.
+
+**Command Line Runner & Application Runner**
+    
+<details>
+<summary>
+Spring Application이 시작된 후에 특정 코드를 실행하고 싶을 때 사용됩니다. 
+두 인터페이스 모두 ‘run’ 메서드를 오버라이드 하여 사용합니다
+</summary>
+
+- ApplicationRunner는 ApplicationArguments를 인자로 받아들이는 반면, CommandLineRunner는 Java의 일반적인 String[] args를 인자로 받습니다.
+- 컴포넌트로 선언하고 필요한 의존성을 주입하여 사용할 수 있습니다..
+
+<pre>
+
+@Component
+public class MyRunner implements CommandLineRunner {
+
+    @Override
+    public void run(String... args) {
+        // 실행하고 싶은 코드
+    }
+}
+
+</pre>
+</details>
+
+**@EventListener**
+<details>
+<summary>
+ApplicationContext가 초기화되거나 새로고침될 때 발생하는 이벤트를 처리하고 싶을 때 사용됩니다.
+</summary>
+
+- 애플리케이션이 완전히 시작된 후에 코드를 실행해야 할 필요가 있을 때 유용합니다.
+<pre>
+@Component
+public class MyStartupRunner {
+
+    @EventListener
+    public void onApplicationEvent(ContextRefreshedEvent event) {
+        // 실행하고 싶은 코드
+    }
+}
+</pre>
+
+- 이 이벤트는 Spring 애플리케이션이 시작된 후 발행됩니다.
+<pre>
+@Component
+public class MyStartupRunner {
+
+    @EventListener(ApplicationReadyEvent.class)
+    public void doSomethingAfterStartup() {
+        // 실행하고 싶은 코드
+    }
+}
+</pre>
+</details>
+
+**@Scheduled**
+<details>
+<summary>
+@Scheduled 애노테이션을 사용하면, 정해진 시간이나 간격으로 특정 코드를 실행할 수 있습니다.
+</summary>
+
+- 주기적으로 실행되어야 하는 코드가 있을 때 유용합니다.
+<pre>
+
+@Service
+@AllArgsConstructor
+public class LicenseNotificationService {
+    private final MemberRepository memberRepository;
+    private final EmailService emailService;
+    @Scheduled(cron = "0 0 15 * * ?")   // 매일 오후 세시에 스케줄러 실행
+    public void sendNotificationForUpcomigEvent() throws MessagingException {
+        List<Member> members = memberRepository.findAll();
+        for (Member member : members) {
+            handleMemberNotification(member);
+        }
+    }
+}
+
+</pre>
+</details>
+
+**@PostConstruct**
+<details>
+<summary>
+@PostConstruct 애노테이션이 붙은 메서드는 해당 빈 객체의 초기화가 완료된 후에 자동으로 실행됩니다.
+</summary>
+<pre>
+**@Component**
+public class JwtTokenizer {
+    @Getter
+    private int accessTokenExpirationMinutes;
+    @PostConstruct
+    public void init() {
+        this.accessTokenExpirationMinutes = this.originMinutes * 6;
+    }
+}
+</pre>
+</details>
+
+**InitializingBean 인터페이스 구현**
+<details>
+<summary>
+InitializingBean 인터페이스를 구현하고 afterPropertiesSet 메서드를 오버라이드하여, 
+빈 객체의 프로퍼티 설정이 완료된 후에 실행할 작업을 정의할 수 있습니다.
+</summary>
+<pre>
+@Component
+public class MyBean implements InitializingBean {
+    @Override
+    public void afterPropertiesSet() {
+        // 프로퍼티 설정 후 실행할 코드
+    }
+}
+</pre>
+</details>
+
+**@Bean의 initMethod**
+<details>
+<summary>
+@Bean 애노테이션을 사용하여 빈을 생성할 때 initMethod 속성을 사용하면, 
+해당 빈 객체 생성 시점에 호출할 초기화 메서드를 지정할 수 있습니다.
+</summary>
+@Configuration
+public class MyConfiguration {
+
+    @Bean(initMethod = "init")
+    public MyBean myBean() {
+        return new MyBean();
+    }
+}
+
+public class MyBean {
+
+    public void init() {
+        // 빈 초기화 시 실행할 코드
+    }
+}
+</details>
 </details>
 
 <details>
@@ -315,6 +509,9 @@ Spring Application을 구동할 때 메서드를 실행시키는 방법에 대�
 <summary>
 JPA 영속성 컨텍스트의 이점(5가지)을 설명해주세요.
 </summary>
+
+<br/>
+
 1차 캐시 :
 영속성 컨텍스트는 엔티티 객체를 보관해서 동일한 엔티티를 여러 번 조회해야 할 때, 데이터베이스에서 가져오지 않고
 1차 캐시에서 가져와서 효율이 좋다
