@@ -12,26 +12,26 @@
 
 6. 시스템 콜(System Call) - 솔이
 
-7. PCB와 Context Switching - 
+7. PCB와 Context Switching - 동민
 
-8. 주소 공간과 가상 메모리(Address Space, Virtual Memory) - 
+8. 주소 공간과 가상 메모리(Address Space, Virtual Memory) - 주연
 
-9. 주소 변환(Address Translation) - 
+9. 주소 변환(Address Translation) - 주연
 
-10. 세그먼테이션(Segmentation) - 
+10. 세그먼테이션(Segmentation) - 솔이
 
-11. 페이징(Paging) -  
+11. 페이징(Paging) - 동민
 
-12. 가상메모리와 요구 페이징, 페이지 교체 - 
+12. 가상메모리와 요구 페이징, 페이지 교체 - 솔이
 
-13. TLB(Translation Lookaside Buffers) - 
+13. TLB(Translation Lookaside Buffers) - 주연
 
-14. TLB 심화 - 
+14. TLB 심화 - 솔이
 
-15. Paging : Smaller Table - 
+15. Paging : Smaller Table - 솔이
 
-16. 동기화(스핀락, 세마포어, 뮤텍스) - 
+16. 동기화(스핀락, 세마포어, 뮤텍스) - 동민 
 
-17. 교착상태(DeadLock) - 
+17. 교착상태(DeadLock) - 동민
 
-18. 멀티프로세스, 스레드와 멀티스레딩 - 
+18. 멀티프로세스, 스레드와 멀티스레딩 - 주연
