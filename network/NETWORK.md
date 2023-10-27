@@ -1,14 +1,14 @@
 # NETWORK
 
 1. 네트워크 기초 - 주연
-2. 대역폭 - 솔이
+2. [대역폭 - 솔이](https://flossy-longship-14b.notion.site/Bandwidth-6c80555968904f58851373b1aecb785d?pvs=4)
 3. OSI 7계층 - 주연
-4. TCP 의 연결 및 해제 과정 (3, 4 - way hands shanking) - 솔이
+4. [TCP 의 연결 및 해제 과정 (3, 4 - way hands shanking) - 솔이](https://flossy-longship-14b.notion.site/TCP-3-4-way-hands-shanking-070d08e7006149798845bc79df0d68ab?pvs=4)
 5. DNS + 웹 통신 흐름 - 주연
-6. 네트워크 기기 - 솔이
+6. [네트워크 기기 - 솔이](https://flossy-longship-14b.notion.site/fc78f1688dbf4c4085ac3f4ecd2ec41e?pvs=4)
 7. L7, L4 스위치 + 로드 밸런싱 - 주연
 8. HTTP 진화과정 - 동민
 9. HTTPS - 동민
-10.  REST API + RESTful - 솔이
+10. [REST API + RESTful - 솔이](https://flossy-longship-14b.notion.site/REST-API-RESTful-4c03f22d4e304e699b0ed267d9dc9c2e?pvs=4)
 11. 쿠키와 세션 - 동민 
 12. 프록시 서버 - 동민
