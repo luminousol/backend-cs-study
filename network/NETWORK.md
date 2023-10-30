@@ -7,8 +7,8 @@
 5. DNS + 웹 통신 흐름 - 주연
 6. [네트워크 기기 - 솔이](https://flossy-longship-14b.notion.site/fc78f1688dbf4c4085ac3f4ecd2ec41e?pvs=4)
 7. L7, L4 스위치 + 로드 밸런싱 - 주연
-8. HTTP 진화과정 - 동민
-9. HTTPS - 동민
+8. [HTTP 진화과정 - 동민](https://www.notion.so/ehdals0405/HTTP-568841a8c7c14c66aaaab759dcd3c27d)
+9. [HTTPS - 동민](https://www.notion.so/ehdals0405/HTTPS-967faa46cfc1405f9ab904a9e0fa62db)
 10. [REST API + RESTful - 솔이](https://flossy-longship-14b.notion.site/REST-API-RESTful-4c03f22d4e304e699b0ed267d9dc9c2e?pvs=4)
-11. 쿠키와 세션 - 동민 
-12. 프록시 서버 - 동민
+11. [쿠키와 세션 - 동민](https://www.notion.so/ehdals0405/Cookie-Session-bfbcfdbc56334cf8b4aa47785fe748a8#d59f064fe53a4ee99a4f08fcb8e23be7) 
+12. [프록시 서버 - 동민](https://www.notion.so/ehdals0405/e8c818253c1242169567427e43287f59)
