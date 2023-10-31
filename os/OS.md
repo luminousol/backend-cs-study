@@ -6,11 +6,11 @@
 
 3. 프로세스와 스레드 - 주연 
 
-4. CPU 스케줄링 알고리즘 - 솔이
+4. [CPU 스케줄링 알고리즘 - 솔이](https://flossy-longship-14b.notion.site/CPU-225df150fa444d2f8d470660dc82add9?pvs=4)
 
 5. 인터럽트(Interrupt) - 동민
 
-6. 시스템 콜(System Call) - 솔이
+6. [시스템 콜(System Call) - 솔이](https://flossy-longship-14b.notion.site/System-Call-6037e8e2283d4b76aed025ac7ed8927b?pvs=4)
 
 7. PCB와 Context Switching - 동민
 
