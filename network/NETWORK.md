@@ -1,6 +1,6 @@
 # NETWORK
 
-1. [네트워크 기초](https://www.notion.so/4a0f54a2586f469e9f28dd663395e5e4?pvs=4) - 주연
+1. [네트워크 기초](https://polydactyl-impala-301.notion.site/4a0f54a2586f469e9f28dd663395e5e4?pvs=4) - 주연
 2. [대역폭 - 솔이](https://flossy-longship-14b.notion.site/Bandwidth-6c80555968904f58851373b1aecb785d?pvs=4)
 3. OSI 7계층 - 주연
 4. [TCP 의 연결 및 해제 과정 (3, 4 - way hands shanking) - 솔이](https://flossy-longship-14b.notion.site/TCP-3-4-way-hands-shanking-070d08e7006149798845bc79df0d68ab?pvs=4)
