@@ -1,10 +1,10 @@
 # OPERATING SYSTEM
 
-1. 운영체제와 컴퓨터 - 주연
+1. [운영체제와 컴퓨터](https://polydactyl-impala-301.notion.site/f0c9f9c339654b318324ed9e6469a27f?pvs=4) - 주연
 
 2. 메모리 계층 - 동민
 
-3. 프로세스와 스레드 - 주연 
+3. [프로세스와 스레드](https://polydactyl-impala-301.notion.site/fffebfb0df8841e3bca5027fc24bfeec?pvs=4) - 주연 
 
 4. CPU 스케줄링 알고리즘 - 솔이
 
