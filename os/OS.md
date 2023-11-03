@@ -18,17 +18,17 @@
 
 9. 주소 변환(Address Translation) - 주연
 
-10. 세그먼테이션(Segmentation) - 솔이
+10. [세그먼테이션(Segmentation) - 솔이](https://flossy-longship-14b.notion.site/Segmentation-3e1d4fe29f324e8e9d451beb58b50dff?pvs=4)
 
 11. 페이징(Paging) - 동민
 
-12. 가상메모리와 요구 페이징, 페이지 교체 - 솔이
+12. [가상메모리와 요구 페이징, 페이지 교체 - 솔이](https://flossy-longship-14b.notion.site/Segmentation-3e1d4fe29f324e8e9d451beb58b50dff?pvs=4)
 
-13. TLB(Translation Lookaside Buffers) - 주연
+13. TLB(Translation Lookaside Buffers) - 솔이
 
 14. TLB 심화 - 솔이
 
-15. Paging : Smaller Table - 솔이
+15. Paging : Smaller Table - 주연
 
 16. 동기화(스핀락, 세마포어, 뮤텍스) - 동민 
 
