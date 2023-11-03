@@ -1,10 +1,10 @@
 # OPERATING SYSTEM
 
-1. 운영체제와 컴퓨터 - 주연
+1. [운영체제와 컴퓨터](https://polydactyl-impala-301.notion.site/f0c9f9c339654b318324ed9e6469a27f?pvs=4) - 주연
 
 2. 메모리 계층 - 동민
 
-3. 프로세스와 스레드 - 주연 
+3. [프로세스와 스레드](https://polydactyl-impala-301.notion.site/fffebfb0df8841e3bca5027fc24bfeec?pvs=4) - 주연 
 
 4. [CPU 스케줄링 알고리즘 - 솔이](https://flossy-longship-14b.notion.site/CPU-225df150fa444d2f8d470660dc82add9?pvs=4)
 
@@ -14,9 +14,9 @@
 
 7. PCB와 Context Switching - 동민
 
-8. 주소 공간과 가상 메모리(Address Space, Virtual Memory) - 주연
+8. [주소 공간과 주소 변환(Address Space, Address Translation)](https://polydactyl-impala-301.notion.site/Address-Space-Address-Translation-c5193d250b8d4c26b337a50c5533e6e6?pvs=4) - 주연
 
-9. 주소 변환(Address Translation) - 주연
+9. [가상 메모리(Virtual Memory)](https://polydactyl-impala-301.notion.site/Virtual-Memory-c0eb3e0884d342a6bfad77d89c7b7039?pvs=4) - 주연
 
 10. [세그먼테이션(Segmentation) - 솔이](https://flossy-longship-14b.notion.site/Segmentation-3e1d4fe29f324e8e9d451beb58b50dff?pvs=4)
 
