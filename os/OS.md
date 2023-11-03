@@ -14,9 +14,9 @@
 
 7. PCB와 Context Switching - 동민
 
-8. 주소 공간과 가상 메모리(Address Space, Virtual Memory) - 주연
+8. [주소 공간과 주소 변환(Address Space, Address Translation)](https://polydactyl-impala-301.notion.site/Address-Space-Address-Translation-c5193d250b8d4c26b337a50c5533e6e6?pvs=4) - 주연
 
-9. 주소 변환(Address Translation) - 주연
+9. [가상 메모리(Virtual Memory)](https://polydactyl-impala-301.notion.site/Virtual-Memory-c0eb3e0884d342a6bfad77d89c7b7039?pvs=4) - 주연
 
 10. 세그먼테이션(Segmentation) - 솔이
 
