@@ -30,8 +30,8 @@
 
 15. Paging : Smaller Table - 주연
 
-16. 동기화(스핀락, 세마포어, 뮤텍스) - 동민 
+16. [동기화(스핀락, 세마포어, 뮤텍스)](https://www.notion.so/ehdals0405/db0090550b0e40899e451ffbffb6a071) - 동민 
 
-17. 교착상태(DeadLock) - 동민
+17. [교착상태(DeadLock)](https://www.notion.so/ehdals0405/Dead-Lock-4638a0064a524ffe9221012ba4fa376f) - 동민
 
 18. 멀티프로세스, 스레드와 멀티스레딩 - 주연
