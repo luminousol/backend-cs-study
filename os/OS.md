@@ -24,9 +24,9 @@
 
 12. [가상메모리와 요구 페이징, 페이지 교체](https://flossy-longship-14b.notion.site/Segmentation-3e1d4fe29f324e8e9d451beb58b50dff?pvs=4)  - 솔이
 
-13. TLB(Translation Lookaside Buffers) - 솔이
+13. [TLB(Translation Lookaside Buffers)](https://flossy-longship-14b.notion.site/TLB-Translation-Lookaside-Buffer-1394951c2e384f9a9f123039645f0cbb?pvs=4) - 솔이
 
-14. TLB 심화 - 솔이
+14. [TLB 심화](https://flossy-longship-14b.notion.site/TLB-Translation-Lookaside-Buffers-ee889e8ebd73467c96ab8b804415d984?pvs=4) - 솔이
 
 15. Paging : Smaller Table - 주연
 
