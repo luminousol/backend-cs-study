@@ -13,7 +13,10 @@
 11. [쿠키와 세션 - 동민](https://www.notion.so/ehdals0405/Cookie-Session-bfbcfdbc56334cf8b4aa47785fe748a8#d59f064fe53a4ee99a4f08fcb8e23be7) 
 12. [프록시 서버 - 동민](https://www.notion.so/ehdals0405/e8c818253c1242169567427e43287f59)
 
-## 질문
+<br/>
+<br/>
+
+## 면접 질문 ❓
 <details>
 <summary>
 웹 통신의 큰 흐름: https://www.google.com/ 을 접속할 때 일어나는 일
