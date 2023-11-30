@@ -1,7 +1,7 @@
 # DATABASE
 
 1. [데이터베이스에서 인덱스를 사용하는 이유 및 장단점](https://polydactyl-impala-301.notion.site/0b8ec88409f745c5a7c09d633481b277?pvs=4) - 주연
-2. [트랜잭션](https://www.notion.so/ehdals0405/8c0f8d871d3b4ae38a8941d75c289538) - 동민ㄴ
+2. [트랜잭션](https://www.notion.so/ehdals0405/8c0f8d871d3b4ae38a8941d75c289538) - 동민
 3. [ACID란?](https://flossy-longship-14b.notion.site/ACID-b113beeae7b24fa69ba9785d51ae4f95?pvs=4) - 솔이
 4. [트랜잭션 격리 수준( Transaction Isolation Levels)](https://polydactyl-impala-301.notion.site/Transaction-Isolation-Levels-ee2cc4607da145a7bddac0c56ca15b7f?pvs=4) - 주연
 5. [정규화와 정규화 과정](https://flossy-longship-14b.notion.site/08442fcf92d9411fa289dd5291559c45?pvs=4) - 솔이
