@@ -8,7 +8,7 @@
 
 4. [CPU 스케줄링 알고리즘](https://flossy-longship-14b.notion.site/CPU-225df150fa444d2f8d470660dc82add9?pvs=4) - 솔이
 
-5. [인터럽트(Interrupt) - 동민](https://www.notion.so/ehdals0405/3137965e1f754ecc8bca712bd7496f11)
+5. [인터럽트(Interrupt)](https://www.notion.so/ehdals0405/3137965e1f754ecc8bca712bd7496f11)  - 동민
 
 6. [시스템 콜(System Call)](https://flossy-longship-14b.notion.site/System-Call-6037e8e2283d4b76aed025ac7ed8927b?pvs=4) - 솔이
 
@@ -20,7 +20,7 @@
 
 10. [세그먼테이션(Segmentation)](https://flossy-longship-14b.notion.site/Segmentation-3e1d4fe29f324e8e9d451beb58b50dff?pvs=4)  - 솔이
 
-11. [페이징(Paging) - 동민](https://www.notion.so/ehdals0405/Paging-7a95433edf6b4d2789098686c9381658)
+11. [페이징(Paging)](https://www.notion.so/ehdals0405/Paging-7a95433edf6b4d2789098686c9381658) - 동민
 
 12. [가상메모리와 요구 페이징, 페이지 교체](https://flossy-longship-14b.notion.site/Segmentation-3e1d4fe29f324e8e9d451beb58b50dff?pvs=4)  - 솔이
 
@@ -30,9 +30,9 @@
 
 15. Paging : Smaller Table - 주연
 
-16. 동기화(스핀락, 세마포어, 뮤텍스) - 동민 
+16. [동기화(스핀락, 세마포어, 뮤텍스)](https://www.notion.so/ehdals0405/db0090550b0e40899e451ffbffb6a071) - 동민 
 
-17. 교착상태(DeadLock) - 동민
+17. [교착상태(DeadLock)](https://www.notion.so/ehdals0405/Dead-Lock-4638a0064a524ffe9221012ba4fa376f) - 동민
 
 18. 멀티프로세스, 스레드와 멀티스레딩 - 주연
 
