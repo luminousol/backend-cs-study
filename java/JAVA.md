@@ -508,6 +508,8 @@ Mutable은 가변 객체 Immutable은 불변 객체이며 가변 객체는 말 �
 
 <br/>
 </details>
+<br/>
+<br/>
 
 ### ➕ 추가 질문
 
