@@ -22,7 +22,18 @@
 웹 통신의 큰 흐름: https://www.google.com/ 을 접속할 때 일어나는 일
 </details>
 </summary>
+<hr/>
+💬 "[https://www.google.com/"을](https://www.google.com/%22%EC%9D%84) 웹 브라우저에 입력하고 엔터를 누르면 일반적으로 다음과 같은 일련의 과정이 발생합니다.
 
+- **DNS 질의**: 브라우저가 DNS 서버에 "[www.google.com"과](http://www.google.xn--com"-ei4p/) 연관된 IP 주소를 찾습니다.
+- **TCP 연결**: 브라우저는 IP 주소를 사용하여 Google 서버와 TCP 연결을 엽니다.
+- **HTTPS 보안 연결**: URL이 "https://"로 시작하기 때문에, 브라우저와 Google 서버는 SSL/TLS 암호화를 사용하여 보안 연결을 설정하기 위한 인증서를 교환합니다.
+- **HTTP 요청**: 브라우저가 이 보안 연결을 통해 "[www.google.com](http://www.google.com/)" 페이지를 요청하는 HTTP GET 요청을 보냅니다.
+- **서버 응답**: Google 서버가 요청을 처리한 후 Google 홈페이지를 구성하는 HTML, CSS, 및 JavaScript 파일을 돌려보냅니다.
+- **페이지 렌더링**: 브라우저가 이 파일들을 읽고 화면에 Google 홈페이지를 표시합니다. 여기에는 검색 상자 및 페이지의 다른 콘텐츠가 포함됩니다.
+- **사용자 상호작용**: 이제 검색 쿼리를 수행하는 등 페이지와 상호작용할 수 있습니다.
+<br/>
+<br/>
 <details>
 <summary>
 TCP와 UDP의 차이점에 대해서 설명해보세요.
