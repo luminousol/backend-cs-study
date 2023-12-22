@@ -10,3 +10,7 @@
 8. [피보나치 수열](https://www.notion.so/ehdals0405/9584259138e541f49ac5ff6d13e35cfc) - 동민
 9. [DFS vs BFS](https://luminousol.notion.site/BFS-vs-DFS-44f3f98e09474aa59a38a09d689f2d72?pvs=4) - 솔이
 10. [정렬](https://polydactyl-impala-301.notion.site/e90ac3439e594dc7b9bc32467d6b7a45?pvs=4) , [탐색](https://polydactyl-impala-301.notion.site/c64060e3798242ab8888df1940cd23ff?pvs=4) - 주연
+
+
+## 알고리즘 낱말카드
+🔗 https://quizlet.com/kr/862831724/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-flash-cards/?funnelUUID=e3415da6-bb47-4035-a5ff-1ca269d16314
