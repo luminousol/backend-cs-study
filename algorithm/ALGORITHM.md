@@ -12,5 +12,6 @@
 10. [정렬](https://polydactyl-impala-301.notion.site/e90ac3439e594dc7b9bc32467d6b7a45?pvs=4) , [탐색](https://polydactyl-impala-301.notion.site/c64060e3798242ab8888df1940cd23ff?pvs=4) - 주연
 
 
-## 알고리즘 낱말카드
-🔗 https://quizlet.com/kr/862831724/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-flash-cards/?funnelUUID=e3415da6-bb47-4035-a5ff-1ca269d16314
+<br/>
+
+🔗 [알고리즘 낱말카드](https://quizlet.com/kr/862831724/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-flash-cards/?funnelUUID=e3415da6-bb47-4035-a5ff-1ca269d16314)
