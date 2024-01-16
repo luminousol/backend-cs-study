@@ -22,6 +22,7 @@
 웹 통신의 큰 흐름: https://www.google.com/ 을 접속할 때 일어나는 일
 </details>
 </summary>
+
 <hr/>
 💬 "[https://www.google.com/"을](https://www.google.com/%22%EC%9D%84) 웹 브라우저에 입력하고 엔터를 누르면 일반적으로 다음과 같은 일련의 과정이 발생합니다.
 
