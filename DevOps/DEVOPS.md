@@ -6,6 +6,6 @@
 4. [MSA(Micro Soft Architecture)의 개념 설명]()
 5. [컨테이너란?]()
 6. [Docker란?](https://luminousol.notion.site/Docker-17a343f1fc5a468a9061691a9674b29e?pvs=4)
-7. [쿠버네티스란?]()
+7. [쿠버네티스란?](https://luminousol.notion.site/Kubernates-c03415dbecf9499981341ff8a5701a85?pvs=4)
 8. [모니터링 툴]()
 9. [쿠버네티스에서 Auto Scaling의 원리]()
