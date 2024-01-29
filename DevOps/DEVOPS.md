@@ -4,7 +4,7 @@
 2. [DevOps이란?](https://luminousol.notion.site/DevOps-e5ab821457474e4db643a3563d31427f?pvs=4)
 3. [스케일 아웃(Scale-out)과 스케일 업(Sclae-up)의 차이](https://luminousol.notion.site/Scale-out-Scale-up-450044e939194608a203dab4e69d5fa7?pvs=4)
 4. [MSA(Micro Soft Architecture)의 개념 설명]()
-5. [컨테이너란?]()
+5. [컨테이너란?](https://luminousol.notion.site/Kubernates-c03415dbecf9499981341ff8a5701a85?pvs=4)
 6. [Docker란?]()
 7. [쿠버네티스란?]()
 8. [모니터링 툴]()
