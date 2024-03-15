@@ -1,6 +1,8 @@
 # 🧑‍💻backend-cs-study👩‍💻
 백엔드 신입 개발자 CS 면접 준비 스터디 CS 뿌수기👊
 
+[🔗 질문 및 정리 모음](https://www.notion.so/CS-Study-f3ff22675cdc47ef9d8c3469e9bfba66)
+
 <br/>
 
 ## 목차 📁
